@@ -6,10 +6,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgb(234, 232, 231), rgb(181, 177, 177));
-    color: rgb(0, 0, 0);
-    font-family: "Jost", sans-serif;
-    font-size: 16px;
+    background: rgb(20, 20, 20);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 350;
     text-align: left;
 }
 
@@ -18,7 +19,7 @@ p {
 }
 
 a {
-    color: rgb(20, 121, 211)
+    color: rgb(22, 184, 98)
 }
 
 h1 {
@@ -31,7 +32,7 @@ h2 {
 }
 
 .main-header {
-    background: linear-gradient(185deg, rgb(122, 62, 55), rgb(43, 33, 33));
+    background: #ffce00;
     padding: 20px;
     display: flex;
     justify-content: left;
@@ -40,19 +41,33 @@ h2 {
 }
 
 .page-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-weight: 300;
     font-size: 20px;
     text-decoration: none;
     user-select: none;
+
+    position: relative;
+    bottom: 7px;
 }
 
 .page-link:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .home-body {
     display: flex;
-    align-items: start; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    flex: 1;
+}
+
+.blog-body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     margin: 20px;
     gap: 20px;
     flex: 1;
@@ -60,72 +75,35 @@ h2 {
 
 .home {
     padding: 20px;
+    max-width: 1000px;
 }
 
 .home-title {
-    font-size: 60px;
+    font-size: 100px;
+    text-align: center;
 }
 
 .home-subtitle {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
     margin: 0 0 30px
 }
 
 .home-header {
     font-size: 20px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 10px 0;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: start; 
-    gap: 20px;
-}
-
-.info-block {
-    background-color: rgb(208, 208, 208);
-    padding: 30px;
-    display: flex;
-    align-items: center; 
-    gap: 30px;
-    width: 400px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.info-left-div {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: start; 
-    gap: 10px;
-}
-
-.info-right-div {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: start; 
-    gap: 10px;
-}
-
-.info-image {
-    width: 100%;
-    height: auto;
-}
-
-#stay-tuned {
-    background-color: rgb(249, 246, 88);
-    rotate: 1deg;
-}
-
-#work-to-do {
-    background-color: rgb(150, 220, 240);
-    rotate: -2deg;
+.inline-logo {
+    display: inline-block;
+    height: 1.4em;
+    position: relative;
+    top: 0.15em;
 }
 
 footer {
-    background: linear-gradient(185deg, rgb(122, 62, 55), rgb(0, 0, 0));
+    background: rgb(7, 7, 7);
     padding: 20px;
 }
 
@@ -140,9 +118,9 @@ footer {
     user-select: none;
 }
 
-.title-icon {
-    width: 30px;
-    height: auto;
+.rb-txt {
+    height: 60px;
+    width: auto;
     margin-right: 5px;
 }
 
@@ -157,12 +135,25 @@ footer {
 }
 
 .foot {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     text-align: left;
+    gap: 10px
+}
+
+.footer-icon-list {
+    display: flex;
+    align-items: start; 
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-icon {
+    height: 40px;
+    width: auto;
 }
 
 ::selection {
-    background-color: rgba(255, 234, 0, 0.728);
+    background-color: rgba(255, 208, 0, 0.5);
 }
 
 .blog-post-link {
